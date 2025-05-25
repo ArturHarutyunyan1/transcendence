@@ -16,7 +16,7 @@ export async function render(root: HTMLElement) {
   
   const container = document.createElement('div');
   container.className =
-  'min-h-screen flex flex-col md:flex-row gap-8 p-8 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-gray-800';
+  'min-h-screen flex flex-col md:flex-row gap-8 p-8 bg-[repeating-linear-gradient(45deg,_#f3f4f6,_#f3f4f6_10px,_#e5e7eb_10px,_#e5e7eb_20px)] h-64 w-full';
   
   try {
     const token = sessionStorage.getItem('token');

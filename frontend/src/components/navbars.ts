@@ -6,13 +6,12 @@ export async function buildNavigationBar(): Promise<HTMLElement | null> {
   if (!userIsAuthenticated) return null;
 
   const navigationElement = document.createElement('nav');
-  navigationElement.className = 'fixed top-0 left-0 h-full w-16 sm:w-20 md:w-24 bg-gray-800 flex flex-col items-center py-6 gap-12 transition-all';
+  navigationElement.className = 'fixed top-0 left-0 w-full h-16 bg-gray-800 flex flex-row items-center px-6 gap-8 transition-all z-50';
 
   const navigationLinks = [
     { href: '/home', label: 'Home', icon: 'home' },
     { href: '/tournament/create', label: 'Matchmaking', icon: 'game' },
     { href: '/profile', label: 'Profile', icon: 'profile' },
-    { href: '/settings', label: 'Settings', icon: 'settings' },
   ];
 
   navigationLinks.forEach(({ href, label, icon }) => {

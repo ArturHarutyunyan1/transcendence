@@ -11,8 +11,7 @@ export async function createTournamentUI(): Promise<HTMLElement> {
     }
     const container = document.createElement('div');
     container.className =
-        'relative flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-fade-bg overflow-hidden p-4';
-
+        'relative flex items-center justify-center min-h-screen bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-4';
     const shapesContainer = document.createElement('div');
     shapesContainer.className = 'absolute inset-0 overflow-hidden z-0';
     container.appendChild(shapesContainer);
@@ -39,7 +38,7 @@ export async function createTournamentUI(): Promise<HTMLElement> {
             </select>
 
             <button type="submit"
-                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                class="bg-blue-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded transition duration-300">
                 Create
             </button>
         </form>

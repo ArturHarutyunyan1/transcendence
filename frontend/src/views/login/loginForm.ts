@@ -4,7 +4,7 @@ import { displayNotificationMessage } from '../../components/notification';
 import { retrieveSessionData, storeSessionData } from '../../utils/cookies';
 import { establishWebSocketConnection } from '../../utils/socket';
 
-const GOOGLE_CLIENT_ID = '863001182336-hluhbj6klucqs9b87ldm58bskjnvb22m.apps.googleusercontent.com';
+const GOOGLE_CLIENT_ID = '623447548515-v84qec04u5oedll1si62ljmbq2lrgo8j.apps.googleusercontent.com';
 
 export function setupLoginForm(root: HTMLElement) {
   const form = root.querySelector('#login-form') as HTMLFormElement;
