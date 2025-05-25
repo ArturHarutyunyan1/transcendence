@@ -4,7 +4,7 @@ import { getIcon } from '../../icons/getIcon';
 export function createLoginUI(): HTMLElement {
   const div = document.createElement('div');
   div.className =
-    'relative flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-fade-bg overflow-hidden';
+    'relative flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 via-yellow-500 to-orange-500 animate-fade-bg overflow-hidden';
 
   const shapesContainer = document.createElement('div');
   shapesContainer.className = 'absolute inset-0 overflow-hidden z-0';
@@ -12,7 +12,7 @@ export function createLoginUI(): HTMLElement {
 
   const formContainer = document.createElement('div');
   formContainer.className =
-    'relative bg-gray-800 bg-opacity-90 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 z-10';
+    'relative bg-gradient-to-bl from-teal-500 via-cyan-600 to-indigo-700 p-8 rounded-xl shadow-2xl transition-transform duration-700 ease-in-out hover:-translate-y-1 hover:rotate-1 z-10';
 
   formContainer.innerHTML += `
     <h1 class="text-3xl font-bold text-center text-white mb-6">Login</h1>
@@ -24,7 +24,7 @@ export function createLoginUI(): HTMLElement {
         <input id="password" type="password" placeholder="Password" class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500" required>
       </div>
       <div class="flex flex-row gap-2 items-center">
-        <button type="submit" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-300">Login</button>
+        <button type="submit" class="flex-1 bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300">Login</button>
         <div id="g_id_signin"></div>
       </div>
     </form>

@@ -3,7 +3,7 @@ import { createFloatingShape } from '../shape/shapes';
 export function createRegisterUI(): HTMLElement {
   const div = document.createElement('div');
   div.className =
-    'relative flex items-center justify-center min-h-screen bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-fade-bg overflow-hidden';
+    'relative flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 via-yellow-500 to-orange-500 animate-fade-bg overflow-hidden';
 
   const shapesContainer = document.createElement('div');
   shapesContainer.className = 'absolute inset-0 overflow-hidden z-0';
@@ -11,7 +11,7 @@ export function createRegisterUI(): HTMLElement {
 
   const formContainer = document.createElement('div');
   formContainer.className =
-    'relative bg-gray-800 bg-opacity-90 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 z-10';
+    'relative bg-gradient-to-r from-fuchsia-600 via-rose-500 to-orange-400 p-8 rounded-xl shadow-xl transition-all duration-700 ease-in-out hover:rotate-1 hover:shadow-2xl z-10';
 
   formContainer.innerHTML = `
     <h1 class="text-3xl font-bold text-center text-white mb-6">Register</h1>
@@ -25,7 +25,7 @@ export function createRegisterUI(): HTMLElement {
       <div class="relative">
         <input id="password" type="password" placeholder="Password" class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
       </div>
-      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">Register</button>
+      <button type="submit" class="bg-fuchsia-600 hover:bg-red -700 text-white font-bold py-2 px-4 rounded transition duration-300">Register</button>
     </form>
     <button id="login-button" class="mt-4 text-blue-300 hover:text-blue-500 transition duration-300 underline">Already have an account? Login</button>
   `;
